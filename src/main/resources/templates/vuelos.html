@@ -4,25 +4,6 @@
 <head>
     <title>Listado de Vuelos</title>
     <meta charset="UTF-8">
-    <script th:inline="javascript">
-        function eliminarVuelo(numVuelo) {
-            if (confirm('¿Está seguro que desea eliminar el vuelo ' + numVuelo + '?')) {
-                fetch('/CrudRepo/ElimnVuelo/' + numVuelo, {
-                    method: 'DELETE'
-                })
-                    .then(response => {
-                        if (response.ok) {
-                            location.reload(); // Actualizar la página
-                        } else {
-                            throw new Error('Ocurrió un error al eliminar el vuelo');
-                        }
-                    })
-                    .catch(error => {
-                        alert(error.message);
-                    });
-            }
-        }
-    </script>
 </head>
 <body>
 <h1>Listado de Vuelos</h1>

@@ -9,17 +9,21 @@
   <thead>
   <tr>
     <th>ID</th>
+    <th>Correo electrónico</th>
     <th>Nombre de usuario</th>
     <th>Contraseña</th>
-    <th>Correo electrónico</th>
   </tr>
   </thead>
   <tbody>
   <tr th:each="usuario : ${listaUsuarios}">
-    <td th:text="${usuarios.id}"></td>
-    <td th:text="${usuario.nombreUsuario}"></td>
-    <td th:text="${usuario.contrasena}"></td>
-    <td th:text="${usuario.correoElectronico}"></td>
+    <td th:text="${usuario.idUsuario}"></td>
+    <td th:text="${usuario.email}"></td>
+    <td th:text="${usuario.nombre}"></td>
+    <td th:text="${usuario.pwdUsuario}"></td>
+    <td>
+      <a th:href="@{/CrudRepo/ModificarUsuarios(idUsuario=${usuario.idUsuario})}">Modificar</a>
+      <a th:href="@{/CrudRepo/ElimnUsuarios(idUsuario=${usuario.idUsuario})}">Eliminar</a>
+    </td> <!--Botones-->
   </tr>
   </tbody>
 </table>

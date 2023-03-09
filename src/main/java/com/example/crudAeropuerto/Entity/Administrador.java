@@ -11,12 +11,12 @@ public class Administrador {
     int id;
     String nombre;
     String email;
-    String contraseña;
+    String pwdAdmin;
 
-    public Administrador(String nombre, String email, String contraseña) {
+    public Administrador(String nombre, String email, String pwdAdmin) {
         this.nombre = nombre;
         this.email = email;
-        this.contraseña = contraseña;
+        this.pwdAdmin = pwdAdmin;
     }
 
     public Administrador() {}
@@ -45,11 +45,11 @@ public class Administrador {
         this.email = email;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPwdAdmin() {
+        return pwdAdmin;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setPwdAdmin(String pwdAdmin) {
+        this.pwdAdmin = pwdAdmin;
     }
 }

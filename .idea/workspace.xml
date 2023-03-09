@@ -5,11 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921e081d-f752-4043-a7eb-0d76194c74fd" name="Changes" comment="Arreglos+admin+usuario(con controlador) *fallito">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/86d59515-8d6a-4a44-aca3-f080e80077d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/86d59515-8d6a-4a44-aca3-f080e80077d4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Vuelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Administrador.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Usuarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/creaVuelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/creaVuelos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/creaAdministradores.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/creaAdministradores.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/creaUsuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/creaUsuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modificarAdministrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modificarAdministrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modificarUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modificarUsuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modificarVuelo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modificarVuelo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vuelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/vuelos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/crudAeropuerto/Controller/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/crudAeropuerto/Controller/Controlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/crudAeropuerto/Entity/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/crudAeropuerto/Entity/Administrador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/crudAeropuerto/Entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/crudAeropuerto/Entity/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Usuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/creaAdministradores.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/creaAdministradores.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/creaUsuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/creaUsuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/modificarAdministrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/modificarAdministrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/modificarUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/modificarUsuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/modificarVuelo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/modificarVuelo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/vuelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/vuelos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Eva" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,26 +78,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2ºDAM/ADD/2ºT" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/damda/Desktop/crudaeropuerto2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="CrudAeropuertoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.crudAeropuerto.CrudAeropuertoApplication" />
-      <module name="crudAeropuerto" />
+      <module name="crudaeropuerto2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.crudAeropuerto.*" />
@@ -103,6 +122,7 @@
       <workItem from="1678275537700" duration="1198000" />
       <workItem from="1678277027167" duration="18004000" />
       <workItem from="1678351410919" duration="2524000" />
+      <workItem from="1678362758019" duration="4118000" />
     </task>
     <task id="LOCAL-00001" summary="+admin+usuario(sin controlador)">
       <created>1678280648956</created>

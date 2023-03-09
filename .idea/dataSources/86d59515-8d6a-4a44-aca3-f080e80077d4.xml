@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="aeropuerto@localhost">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.32">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.43">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1295,10 +1295,10 @@
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
     <column id="353" parent="352" name="num_vuelo">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="354" parent="352" name="destino">
       <DataType>varchar(255)|0s</DataType>
@@ -1322,9 +1322,9 @@
       <Position>6</Position>
     </column>
     <key id="359" parent="352" name="PRIMARY">
-      <ColNames>num_vuelo</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
+      <UnderlyingIndexColNames>num_vuelo</UnderlyingIndexColNames>
     </key>
   </database-model>
 </dataSource>

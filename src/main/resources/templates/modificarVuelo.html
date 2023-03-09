@@ -41,6 +41,7 @@
 
   <label for="numVuelo">Numero de vuelo:</label>
   <input type="text" id="numVuelo" name="numVuelo" th:value="${vuelo.numVuelo}" required>
+
   <label for="numPasajeros">Numero de Pasajeros:</label>
   <input type="number" id="numPasajeros" name="numPasajeros" min="1" th:value="${vuelo.numPasajeros}" max="500" required>
 
@@ -56,7 +57,6 @@
   <label for="hora">Hora de salida:</label>
   <input type="time" id="hora" name="horaSalida" th:value="${vuelo.hora}" required>
 
-  <input type="hidden" id="idVuelo" name="idVuelo" value="">
   <input type="submit" value="Modificar vuelo">
 </form>
 </body>

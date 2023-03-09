@@ -15,12 +15,17 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="administrador : ${listaAdministradores}">
-        <td th:text="${administrador.id}"></td>
-        <td th:text="${administrador.nombreUsuario}"></td>
-        <td th:text="${administrador.contrasena}"></td>
-        <td th:text="${administrador.correoElectronico}"></td>
+    <tr th:each="administradores : ${listaAdministradores}">
+        <td th:text="${administradores.id}"></td>
+        <td th:text="${administradores.email}"></td>
+        <td th:text="${administradores.nombre}"></td>
+        <td th:text="${administradores.pwdAdmin}"></td>
+        <td>
+            <a th:href="@{/CrudRepo/ModificarAdministradores(id=${administradores.id})}">Modificar</a>
+            <a th:href="@{/CrudRepo/ElimnAdministradores(id=${administradores.id})}">Eliminar</a>
+        </td> <!--Botones-->
     </tr>
+
     </tbody>
 </table>
 </body>
