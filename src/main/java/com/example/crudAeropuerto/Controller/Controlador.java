@@ -103,7 +103,7 @@ public class Controlador {
         return ResponseEntity.status(HttpStatus.CREATED).body(usuarioCreado);
     }
 
-    @GetMapping(value = "/ModificarUsuario")
+    @GetMapping(value = "/ModificarUsuarios")
     public String ModiUsuario(@RequestParam int idUsuario, Model model){
         Usuario usuario = implUsu.BuscaUsuario(idUsuario);
         model.addAttribute("usuario", usuario);
@@ -111,7 +111,7 @@ public class Controlador {
     }
 
 
-    @GetMapping(value = "/EliminarUsuario")
+    @GetMapping(value = "/ElimnUsuarios")
     public String EliminarUsuario(@RequestParam int idUsuario){
         Usuario usuario = usuarioRepo.findById(idUsuario).orElse(null);
         usuarioRepo.delete(usuario);
@@ -139,9 +139,9 @@ public class Controlador {
         return ResponseEntity.status(HttpStatus.CREATED).body(administradorCreado);
     }
 
-    @GetMapping(value = "/ModificarAdministrador")
-    public String ModiAdministrador(@RequestParam int idAdministrador, Model model){
-        Administrador administrador = implAdmin.BuscaAdministrador(idAdministrador);
+    @GetMapping(value = "/ModificarAdministradores")
+    public String ModiAdministrador(@RequestParam int id, Model model){
+        Administrador administrador = implAdmin.BuscaAdministrador(id);
         model.addAttribute("administrador", administrador);
         return "modificarAdministrador";
     }
@@ -149,11 +149,11 @@ public class Controlador {
 
 
 
-    @GetMapping(value = "/EliminarAdministrador")
-    public String EliminarAdministrador(@RequestParam int idAdministrador){
-        Administrador administrador = adminRepo.findById(idAdministrador).orElse(null);
+    @GetMapping(value = "/ElimnAdministradores")
+    public String EliminarAdministrador(@RequestParam int id){
+        Administrador administrador = adminRepo.findById(id).orElse(null);
         adminRepo.delete(administrador);
-        return "administradores";
+        return "Administrador";
     }
 
     

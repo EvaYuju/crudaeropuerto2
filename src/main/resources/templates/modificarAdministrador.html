@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Modificar Administrador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #444;
+            text-align: center;
+        }
+        input[type=text], input[type=date], input[type=number] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #999;
+            width: 400px;
+        }
+        input[type=submit] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+<h1>Modificar Administrador</h1>
+<form th:action="@{/CrudRepo/CrearAdministrador}" method="post" >
 
+    <label for="id">Id Administrador:</label>
+    <input type="text" id="id" name="id" th:value="${administrador.id}" required>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" th:value="${administrador.nombre}" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" th:value="${administrador.email}" required>
+
+    <label for="pwdAdmin">Contraseña:</label>
+    <input type="text" id="pwdAdmin" name="pwdAdmin" th:value="${administrador.pwdAdmin}" required>
+
+    <input type="submit" value="Modificar administrador">
+</form>
 </body>
 </html>

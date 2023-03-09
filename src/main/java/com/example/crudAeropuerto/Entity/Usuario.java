@@ -11,22 +11,23 @@ public class Usuario {
     int idUsuario;
     String nombre;
     String email;
-    String contraseña;
+    String pwdUsuario;
 
-    public Usuario(String nombre, String email, String contraseña) {
+    public Usuario(int idUsuario, String nombre, String email, String pwdUsuario) {
+
+        this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.email = email;
-        this.contraseña = contraseña;
+        this.pwdUsuario = pwdUsuario;
     }
 
-    public Usuario() {}
-
-    public Integer getId() {
+    public Usuario(){}
+    public int getIdUsuario() {
         return idUsuario;
     }
 
-    public void setId(Integer id) {
-        this.idUsuario = id;
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     public String getNombre() {
@@ -45,11 +46,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPwdUsuario() {
+        return pwdUsuario;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setPwdUsuario(String pwdUsuario) {
+        this.pwdUsuario = pwdUsuario;
     }
 }

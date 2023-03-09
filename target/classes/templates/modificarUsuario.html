@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Modificar Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #444;
+            text-align: center;
+        }
+        input[type=text], input[type=date], input[type=number] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #999;
+            width: 400px;
+        }
+        input[type=submit] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+<h1>Modificar Usuario</h1>
+<form th:action="@{/CrudRepo/CrearUsuarios}" method="post" >
 
+    <label for="idUsuario">Id Usuario:</label>
+    <input type="text" id="idUsuario" name="idUsuario" th:value="${usuario.idUsuario}" required>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" th:value="${usuario.nombre}" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" th:value="${usuario.email}" required>
+
+    <label for="pwdUsuario">Contraseña:</label>
+    <input type="text" id="pwdUsuario" name="pwdUsuario" th:value="${usuario.pwdUsuario}" required>
+
+    <input type="submit" value="Modificar Usuario">
+</form>
 </body>
 </html>
