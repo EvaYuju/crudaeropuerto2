@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="921e081d-f752-4043-a7eb-0d76194c74fd" name="Changes" comment="Arreglos+admin+usuario(con controlador) *fallito">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Controller/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crudAeropuerto/Entity/Vuelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Usuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/creaVuelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/creaVuelos.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Eva" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2MjJfeoYCYeFJcMYyLuJzCUNbe4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2ºDAM/ADD/2ºT" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CrudAeropuertoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.crudAeropuerto.CrudAeropuertoApplication" />
+      <module name="crudAeropuerto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.crudAeropuerto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CrudAeropuertoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="921e081d-f752-4043-a7eb-0d76194c74fd" name="Changes" comment="" />
+      <created>1678275166106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678275166106</updated>
+      <workItem from="1678275168515" duration="313000" />
+      <workItem from="1678275537700" duration="1198000" />
+      <workItem from="1678277027167" duration="18004000" />
+      <workItem from="1678351410919" duration="2524000" />
+    </task>
+    <task id="LOCAL-00001" summary="+admin+usuario(sin controlador)">
+      <created>1678280648956</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678280648956</updated>
+    </task>
+    <task id="LOCAL-00002" summary="+admin+usuario(con controlador) *fallito">
+      <created>1678308096476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678308096476</updated>
+    </task>
+    <task id="LOCAL-00003" summary="+admin+usuario(con controlador) *fallito">
+      <created>1678309182365</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678309182365</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Arreglos+admin+usuario(con controlador) *fallito">
+      <created>1678317154434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678317154434</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Arreglos+admin+usuario(con controlador) *fallito">
+      <created>1678319798422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678319798422</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="+admin+usuario(sin controlador)" />
+    <MESSAGE value="+admin+usuario(con controlador) *fallito" />
+    <MESSAGE value="Arreglos+admin+usuario(con controlador) *fallito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglos+admin+usuario(con controlador) *fallito" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

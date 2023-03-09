@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Listado de Vuelos</title>
+    <meta charset="UTF-8">
+    <script th:inline="javascript">
+        function eliminarVuelo(numVuelo) {
+            if (confirm('¿Está seguro que desea eliminar el vuelo ' + numVuelo + '?')) {
+                fetch('/CrudRepo/ElimnVuelo/' + numVuelo, {
+                    method: 'DELETE'
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            location.reload(); // Actualizar la página
+                        } else {
+                            throw new Error('Ocurrió un error al eliminar el vuelo');
+                        }
+                    })
+                    .catch(error => {
+                        alert(error.message);
+                    });
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Listado de Vuelos</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Número de vuelo</th>
+        <th>Número de Pasajeros</th>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Acciones</th> <!--Columna para los botones-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vuelo : ${listaVuelos}">
+        <td th:text="${vuelo.numVuelo}"></td>
+        <td th:text="${vuelo.numPasajeros}"></td>
+        <td th:text="${vuelo.origen}"></td>
+        <td th:text="${vuelo.destino}"></td>
+        <td th:text="${vuelo.fecha}"></td>
+        <td th:text="${vuelo.hora}"></td>
+        <td>
+            <a th:href="@{/CrudRepo/ModificarVuelos(numVuelo=${vuelo.numVuelo})}">Modificar</a>
+            <a th:href="@{/CrudRepo/ElimnVuelo(numVuelo=${vuelo.numVuelo})}">Eliminar</a>
+        </td> <!--Botones-->
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

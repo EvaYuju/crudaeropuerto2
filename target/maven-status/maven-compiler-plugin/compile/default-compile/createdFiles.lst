@@ -1,0 +1,7 @@
+com\example\crudAeropuerto\Entity\Vuelo.class
+com\example\crudAeropuerto\Controller\Controlador.class
+com\example\crudAeropuerto\Service\VueloService.class
+com\example\crudAeropuerto\Service\VueloServiceIMPL\VueloServiceIMPL.class
+com\example\crudAeropuerto\Repository\VueloRepo.class
+com\example\crudAeropuerto\AppConfig.class
+com\example\crudAeropuerto\CrudAeropuertoApplication.class
