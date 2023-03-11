@@ -21,7 +21,9 @@ public class Usuario {
         this.pwdUsuario = pwdUsuario;
     }
 
-    public Usuario(){}
+    public Usuario(){
+
+    }
     public int getIdUsuario() {
         return idUsuario;
     }

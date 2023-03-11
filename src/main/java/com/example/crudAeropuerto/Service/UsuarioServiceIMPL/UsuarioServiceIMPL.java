@@ -39,4 +39,15 @@ public class UsuarioServiceIMPL implements UsuarioService {
     public void EliminaUsuario(int idUsuario) {
         this.repo.deleteById(idUsuario);
     }
+
+    @Override
+    public boolean authenticateUser(String nombre, String pwdUsuario) {
+        List<Usuario> usuarios = repo.findAll();
+        for (Usuario usuario : usuarios) {
+            if (usuario.getNombre().equals(nombre) && usuario.getPwdUsuario().equals(pwdUsuario)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

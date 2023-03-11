@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="aeropuerto@localhost">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.43">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.32">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1290,41 +1290,95 @@
     <user id="351" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="352" parent="324" name="vuelos">
+    <table id="352" parent="324" name="administradores">
       <Engine>MyISAM</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="353" parent="352" name="num_vuelo">
-      <AutoIncrement>1</AutoIncrement>
+    <table id="353" parent="324" name="usuarios">
+      <Engine>MyISAM</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="354" parent="324" name="vuelos">
+      <Engine>MyISAM</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="355" parent="352" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="354" parent="352" name="destino">
+    <column id="356" parent="352" name="email">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="355" parent="352" name="fecha">
+    <column id="357" parent="352" name="nombre">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="356" parent="352" name="hora">
+    <column id="358" parent="352" name="pwd_admin">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="357" parent="352" name="num_pasajeros">
+    <key id="359" parent="352" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="360" parent="353" name="id_usuario">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="361" parent="353" name="email">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="362" parent="353" name="nombre">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="363" parent="353" name="pwd_usuario">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <key id="364" parent="353" name="PRIMARY">
+      <ColNames>id_usuario</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="365" parent="354" name="num_vuelo">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="366" parent="354" name="destino">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="367" parent="354" name="fecha">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="368" parent="354" name="hora">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="369" parent="354" name="num_pasajeros">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="358" parent="352" name="origen">
+    <column id="370" parent="354" name="origen">
       <DataType>varchar(255)|0s</DataType>
       <Position>6</Position>
     </column>
-    <key id="359" parent="352" name="PRIMARY">
+    <key id="371" parent="354" name="PRIMARY">
+      <ColNames>num_vuelo</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexColNames>num_vuelo</UnderlyingIndexColNames>
     </key>
   </database-model>
 </dataSource>

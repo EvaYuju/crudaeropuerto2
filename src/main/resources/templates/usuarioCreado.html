@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>✈ Usuario creado ✈</title>
+
+    <style>
+
+        body {
+            background-image: url("https://rare-gallery.com/uploads/posts/5340856-through-window-sky-sun-horizon-wing-wing-tip-plane-airplane-jet-dark-travel-explore-night-sunset-sunrise-journey-discover-view-flight-16mm-public-domain-images.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            text-align: center;
+
+        }
+        .a, .texto {
+
+            font-size: 2em;
+            color: #f2f2f2;
+            margin: 0;
+        }
+
+        .texto {
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+
+        .boton {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 1.5em;
+            color: #1b262c;
+            background-color: #dfcdc3;
+            border: none;
+            border-radius: 0.3em;
+            padding: 0.5em 1em;
+            margin-top: 2em;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: #3c4245;
+            color: #dfcdc3;}
+
+
+    </style>
+</head>
+<body>
+<p class="a">Usuario creado</p>
+<p class="texto">El usuario con los siguientes detalles ha sido creado:</p>
+<ul>
+    <p class="texto">ID: <span th:text="${usuario.idUsuario}"/></p>
+    <p class="texto">Nombre: <span th:text="${usuario.nombre}"/></p>
+    <p class="texto">Email: <span th:text="${usuario.email}"/></p>
+</ul>
+
+<a href="/" class="boton">Volver a la página principal</a>
+</body>
+</html>

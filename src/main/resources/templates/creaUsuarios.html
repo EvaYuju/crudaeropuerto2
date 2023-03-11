@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Crea Usuario</title>
+    <title>✈ Crea Usuario ✈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <style>
         form {
             display: flex;
@@ -10,11 +11,46 @@
             align-items: center;
             margin-top: 50px;
         }
+        body {
+            background-image: url("https://rare-gallery.com/uploads/posts/5340856-through-window-sky-sun-horizon-wing-wing-tip-plane-airplane-jet-dark-travel-explore-night-sunset-sunrise-journey-discover-view-flight-16mm-public-domain-images.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            text-align: center;
+
+        }
+        .a, .texto {
+
+            font-size: 2em;
+            color: #f2f2f2;
+            margin: 0;
+        }
+
+        .texto {
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+
+        .boton {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 1.5em;
+            color: #1b262c;
+            background-color: #dfcdc3;
+            border: none;
+            border-radius: 0.3em;
+            padding: 0.5em 1em;
+            margin-top: 2em;
+            cursor: pointer;
+        }
+
+
+
         label {
             margin-bottom: 10px;
             font-weight: bold;
             font-size: 20px;
-            color: #444;
+            color: white;
             text-align: center;
         }
         input[type=text], input[type=email], input[type=password] {
@@ -33,10 +69,11 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
     </style>
 </head>
 <body>
-<h1>Crea Usuario</h1>
+<h1 class="a">Crea Usuario</h1>
 <form action="/CrudRepo/CrearUsuarios" method="post" >
 
     <label for="nombre">Nombre:</label>

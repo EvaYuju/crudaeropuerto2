@@ -15,4 +15,7 @@ public interface UsuarioService {
 
     public void EliminaUsuario(int idUsuario);
 
+    boolean authenticateUser(String nombre, String pwdUsuario);
+
+
 }
